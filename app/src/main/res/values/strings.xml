@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OcaLoka</string>
+    <string-array name="Fiches">
+        <item>gos</item>
+        <item>barret</item>
+        <item>carratilla</item>
+        <item>coche</item>
+        <item>didal</item>
+        <item>vaxeill</item>
+        <item>sabata</item>
+        <item>gat</item>
+    </string-array>
+</resources>

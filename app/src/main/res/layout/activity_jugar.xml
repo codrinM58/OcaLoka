@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEA302"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="Selecció Jugadors"
+        android:textSize="40sp"
+        android:layout_gravity="center"/>
+
+    <!-- LAYOUT 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_jugador1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre1:"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/et_jugador1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/fitxes1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="Lila"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll_botoafegir1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_afegirJugador1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/afegirjugador"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_afegirJugador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afegeix jugador"
+                android:gravity=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- LAYOUT 2 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_jugador2"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_jugadors2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre2:"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/et_jugador2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/fitxes2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="Verd"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_botoafegir2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_afegirJugador2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/afegirjugador"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_afegirJugador2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afegeix jugador"
+                android:gravity=""/>
+            <ImageView
+                android:id="@+id/iv_restarJugador2"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/restarjugador"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_restarJugador2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restar jugador"
+                android:gravity=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- LAYOUT 3 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/ll_jugador3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/ll_jugadors3"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre3:"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/et_jugador3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/fitxes3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="Blau"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_botoafegir3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_afegirJugador3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/afegirjugador"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_afegirJugador3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afegeix jugador"
+                android:gravity=""/>
+
+            <ImageView
+                android:id="@+id/iv_restarJugador3"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/restarjugador"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_restarJugador3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restar jugador"
+                android:gravity=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- LAYOUT 4 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_jugador4"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/ll_jugadors4"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre4:"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/et_jugador4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/fitxes4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="Vermell"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_botoafegir4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_afegirJugador4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/afegirjugador"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_afegirJugador4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afegeix jugador"
+                android:gravity=""/>
+
+            <ImageView
+                android:id="@+id/iv_restarJugador4"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/restarjugador"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_restarJugador4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restar jugador"
+                android:gravity=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- LAYOUT 5 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_jugador5"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/ll_jugadors5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre5:"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/et_jugador5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/fitxes5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="Groc"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_botoafegir5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_restarJugador5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/restarjugador"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_afegirJugador5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restar jugador"
+                android:gravity=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/taulell"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textStyle="bold|italic"
+            android:background="@drawable/button_background"
+            android:text="jugar"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>
